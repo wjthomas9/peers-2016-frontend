@@ -1,0 +1,57 @@
+body {
+    background: $lightBlue;
+    background: linear-gradient(to bottom, lighten($lightBlue, 5%), $darkBlue 70%);
+    text-align: center;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 71.25em;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.section {
+    padding: 3em 0;
+
+    &__header {
+        h2 {
+            margin-bottom: 0;
+        }
+
+        margin-bottom: 3em;
+    }
+}
+
+.quotes {
+    background: rgba($darkBlue, 0.2);
+
+    .section__header {
+        margin-bottom: 8em;
+    }
+}
+
+.resources {
+    background: $darkBlue;
+}
+
+
+@media (min-width: 42em) {
+    .quotes, .section__body,
+    .resources, .section__body {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .quote {
+        flex: 0 1 50%; //flex-grow, flex-shrink, flex-basis
+    }
+
+    .resource-list {
+        flex: 0 1 32%;
+    }
+}

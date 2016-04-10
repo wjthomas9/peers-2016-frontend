@@ -1,0 +1,65 @@
+{% extends 'layouts/layout.html' %}
+
+{% block title %}Optimize your frontend workflow{% endblock %}
+
+{% block content %}
+{% include "partials/hero.html" %}
+
+<section class="section quotes">
+    <div class="container">
+        <div class="section__header">
+            <h2>Who's optimizing with frontend tools?</h2>
+        </div>
+        <div class="section__body">
+            {% include "partials/quote.html" %}
+            {% include "partials/quote.html" %}
+            {% include "partials/quote.html" %}
+            {% include "partials/quote.html" %}
+            {% include "partials/quote.html" %}
+            {% include "partials/quote.html" %}
+            {% include "partials/quote.html" %}
+            {% include "partials/quote.html" %}
+            {% include "partials/quote.html" %}
+            {% include "partials/quote.html" %}
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="section__header">
+            <h2>Resources</h2>
+        </div>
+        <div class="section__body">
+            <ul class="resource-list">
+                <li class="resource-list__item resource-list__item--label"><i class="fa fa-newspaper-o"></i> Articles</li>
+                <li class="resource-list__item"><a href="">Lorem ipsum dolor sit amet</a></li>
+                <li class="resource-list__item"><a href="">Lorem ipsum dolor sit amet</a></li>
+                <li class="resource-list__item"><a href="">Lorem ipsum dolor sit amet</a></li>
+                <li class="resource-list__item"><a href="">Lorem ipsum dolor sit amet</a></li>
+            </ul>
+            <ul class="resource-list">
+                <li class="resource-list__item resource-list__item--label"><i class="fa fa-music"></i> Podcasts</li>
+                <li class="resource-list__item"><a href="">Lorem ipsum dolor sit amet</a></li>
+                <li class="resource-list__item"><a href="">Lorem ipsum dolor sit amet</a></li>
+                <li class="resource-list__item"><a href="">Lorem ipsum dolor sit amet</a></li>
+            </ul>
+            <ul class="resource-list">
+                <li class="resource-list__item resource-list__item--label"><i class="fa fa-group"></i> People</li>
+                <li class="resource-list__item"><a href="">@someone</a></li>
+                <li class="resource-list__item"><a href="">@someone</a></li>
+                <li class="resource-list__item"><a href="">@someone</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <a href="" class="coupon">
+            <div class="coupon__image"><img src="/assets/img/ayw-book-cover.jpg" alt="Automating your workflow"></div>
+            <div class="coupon__text">Get 20% off <small><span>Automating Your Workflow</span> with coupon code <strong>PEERS</strong></small></div>
+        </a>
+    </div>
+</section>
+{% endblock %}

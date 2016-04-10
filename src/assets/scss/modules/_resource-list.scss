@@ -1,0 +1,33 @@
+.resource-list {
+    line-height: 1.4;
+    list-style: none;
+    color: white;
+    margin: 0 0 2em;
+    padding: 1.5em 1em;;
+    background: rgba(white, 0.1);
+
+    &__item {
+        margin-bottom: 0.5em;
+
+        &--label {
+            line-height: 1;
+            margin-bottom: 1.8em;
+            text-transform: uppercase;
+
+            .fa {
+                vertical-align: middle;
+                font-size: 2em;
+                margin-right: 0.2em;
+            }
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+
+            &:hover {
+                color: lighten($lightBlue, 35%);
+            }
+        }
+    }
+}

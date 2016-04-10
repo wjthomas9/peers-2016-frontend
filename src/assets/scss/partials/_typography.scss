@@ -1,0 +1,27 @@
+body {
+    font-family: $sans;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: white;
+    font-weight: normal;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 2em;
+
+    @media (min-width: 42em) {
+        font-size: 3em;
+    }
+}
+
+h2 {
+    font-size: 1.5em;
+
+    @media (min-width: 42em) {
+        font-size: 2em;
+    }
+}
