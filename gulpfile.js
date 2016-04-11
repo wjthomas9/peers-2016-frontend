@@ -224,5 +224,4 @@ gulp.task('watch', function() {
     gulp.watch(src.scripts, ['scripts']);
     gulp.watch([src.data], ['templates']);
     gulp.watch(src.templatesAndPartials, ['templates']);
-    gulp.watch([src.images], ['images']);
 });
