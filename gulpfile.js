@@ -15,6 +15,8 @@ var data            = require('gulp-data');
 var prettify        = require('gulp-prettify');
 var rev             = require('gulp-rev');
 var revReplace      = require('gulp-rev-replace');
+var csv2json        = require('gulp-csv2json');
+var rename          = require('gulp-rename');
 var rimraf          = require('rimraf');
 var runSequence     = require('run-sequence');
 var browserSync     = require('browser-sync').create();
@@ -36,6 +38,7 @@ var sassIncludePaths = [
 var src = {
     path: 'src/',
     assetsDir: 'src/assets/',
+    dataDir: 'src/data',
     scripts: 'src/assets/js/**/*.js',
     images: 'src/assets/img/**/*',
     sass: 'src/assets/scss/**/*.scss',
@@ -47,7 +50,7 @@ var src = {
 // Set distribution paths
 var dist = {
     path: 'dist/',
-    htmlDir: 'dist/html/',
+    htmlDir: 'dist/html',
     assetsDir: 'dist/html/assets',
     scriptsDir: 'dist/html/assets/js',
     imagesDir: 'dist/html/assets/img',
@@ -63,7 +66,7 @@ gulp.task('clean', function(cb) {
 
 gulp.task('build', function(cb) {
     runSequence('clean',
-        ['scripts', 'sass', 'images', 'templates'],
+        ['scripts', 'sass', 'images', 'convert-data', 'templates'],
         'copyassets', 'revassets', 'replaceUrls', 'prettify-templates', cb);
 });
 
@@ -138,6 +141,20 @@ gulp.task('sass', function() {
         .pipe(gulpif(!PRODUCTION, sourcemaps.write()))
         .pipe(gulp.dest(dist.cssDir))
         .pipe(browserSync.stream());
+});
+
+
+
+
+//Convert data
+//Options at http://csv.adaltas.com/parse/
+gulp.task('convert-data', function() {
+    return gulp.src('frontend-data.csv')
+        .pipe(csv2json({
+            skip_empty_lines: true
+        }))
+        .pipe(rename({extname: '.json'}))
+        .pipe(gulp.dest(src.dataDir));
 });
 
 
