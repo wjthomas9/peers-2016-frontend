@@ -1,9 +1,14 @@
+{% if quote.quoteText %}
 <div class="quote">
     <div class="quote__body">
-        <a href="" class="quote__profile-image"><img src="http://placehold.it/150" alt="profile image"></a>
+        <a href="htts://twitter.com/{{ quote.twitterHandle }}" class="quote__profile-image">
+            <img src="/assets/img/{{ quote.profilePic }}" alt="profile image">
+        </a>
         <div class="quote__text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus ullam autem similique quibusdam minima sunt quidem vitae eveniet aliquid reiciendis corporis voluptatem cum deleniti enim, perferendis suscipit natus repudiandae maiores?</p>
-            <div class="quote__name">&mdash;John Doe</div>
+            <p>&ldquo;{{ quote.quoteText }}&rdquo;</p>
         </div>
+        <div class="quote__name">&mdash;{{ quote.name }}</div>
+        <div class="quote__title">{{ quote.title }}</div>
     </div>
 </div>
+{% endif %}

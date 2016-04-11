@@ -18,6 +18,8 @@ var revReplace      = require('gulp-rev-replace');
 var csv2json        = require('gulp-csv2json');
 var rename          = require('gulp-rename');
 var rimraf          = require('rimraf');
+var fs              = require('fs');
+var path            = require('path');
 var runSequence     = require('run-sequence');
 var browserSync     = require('browser-sync').create();
 
@@ -66,7 +68,7 @@ gulp.task('clean', function(cb) {
 
 gulp.task('build', function(cb) {
     runSequence('clean',
-        ['scripts', 'sass', 'images', 'convert-data', 'templates'],
+        ['scripts', 'sass', 'images', 'templates'],
         'copyassets', 'revassets', 'replaceUrls', 'prettify-templates', cb);
 });
 
@@ -146,24 +148,18 @@ gulp.task('sass', function() {
 
 
 
-//Convert data
-//Options at http://csv.adaltas.com/parse/
-gulp.task('convert-data', function() {
-    return gulp.src('frontend-data.csv')
-        .pipe(csv2json({
-            skip_empty_lines: true
-        }))
-        .pipe(rename({extname: '.json'}))
-        .pipe(gulp.dest(src.dataDir));
-});
-
-
-
+//Create JSON data to pass to twig
+function getData(file) {
+    var data = {};
+    data.quotes = JSON.parse(fs.readFileSync(file));
+    return data;
+}
 
 
 //Compile HTML Templates
 gulp.task('templates', function() {
-    gulp.src(src.templates)
+    return gulp.src(src.templates)
+        .pipe(data(getData('./src/data/surveyQuotes.json')))
         .pipe(twig())
         .pipe(gulp.dest(dist.htmlDir))
         .pipe(browserSync.stream());
@@ -228,4 +224,5 @@ gulp.task('watch', function() {
     gulp.watch(src.scripts, ['scripts']);
     gulp.watch([src.data], ['templates']);
     gulp.watch(src.templatesAndPartials, ['templates']);
+    gulp.watch([src.images], ['images']);
 });

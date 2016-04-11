@@ -5,20 +5,6 @@
     padding: 0.8em;
     text-align: center;
 
-    &__body {
-        background: white;
-        position: relative;
-        padding: 75px 2em 2em;
-        border-radius: 10px;
-        box-shadow: 8px 8px 0 0 black;
-
-        p {
-            color: #888;
-            line-height: 1.5;
-            margin-bottom: 1.5em;
-        }
-    }
-
     &__profile-image {
         width: 150px;
         height: 150px;
@@ -34,6 +20,30 @@
         img {
             max-width: 100%;
         }
+    }
+
+    &__body {
+        background: white;
+        position: relative;
+        padding: 75px 2em 2em;
+        border-radius: 10px;
+        box-shadow: 8px 8px 0 0 black;
+
+        p {
+            color: #888;
+            line-height: 1.5;
+            margin-bottom: 1.5em;
+        }
+    }
+
+    &__name {
+        margin-bottom: 6px;
+    }
+
+    &__title {
+        color: #888;
+        font-style: italic;
+        font-size: 0.9em;
     }
 
     @media (min-width: 42em) {

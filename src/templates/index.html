@@ -11,16 +11,9 @@
             <h2>Who's optimizing with frontend tools?</h2>
         </div>
         <div class="section__body">
+            {% for quote in quotes %}
             {% include "partials/quote.html" %}
-            {% include "partials/quote.html" %}
-            {% include "partials/quote.html" %}
-            {% include "partials/quote.html" %}
-            {% include "partials/quote.html" %}
-            {% include "partials/quote.html" %}
-            {% include "partials/quote.html" %}
-            {% include "partials/quote.html" %}
-            {% include "partials/quote.html" %}
-            {% include "partials/quote.html" %}
+            {% endfor %}
         </div>
     </div>
 </section>
