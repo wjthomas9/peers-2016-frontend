@@ -5,29 +5,32 @@
     padding: 0.8em;
     text-align: center;
 
-    &__profile-image {
-        width: 150px;
-        height: 150px;
-        border-radius: 100%;
-        overflow: hidden;
-        position: absolute;
-        left: 50%;
-        margin-left: -75px;
-        top: 0;
-        margin-top: -75px;
-        box-shadow: 5px 5px 0 0 rgba(black, 0.1);
+    border: 1px solid #ddd;
 
-        img {
-            max-width: 100%;
-        }
-    }
+    // &__profile-image {
+    //     width: 150px;
+    //     height: 150px;
+    //     border-radius: 100%;
+    //     overflow: hidden;
+    //     position: absolute;
+    //     left: 50%;
+    //     margin-left: -75px;
+    //     top: 0;
+    //     margin-top: -75px;
+    //     box-shadow: 5px 5px 0 0 rgba(black, 0.1);
+
+    //     img {
+    //         max-width: 100%;
+    //     }
+    // }
 
     &__body {
         background: white;
-        position: relative;
-        padding: 75px 2em 2em;
-        border-radius: 10px;
-        box-shadow: 8px 8px 0 0 black;
+        padding: 2em;
+        // padding: 75px 2em 2em;
+        // position: relative;
+        // border-radius: 10px;
+        // box-shadow: 8px 8px 0 0 black;
 
         p {
             color: #888;
@@ -46,13 +49,13 @@
         font-size: 0.9em;
     }
 
-    @media (min-width: 42em) {
-        width: 50%;
-        margin-bottom: 5em;
+    // @media (min-width: 42em) {
+    //     width: 50%;
+    //     margin-bottom: 5em;
 
-        &__body {
-            padding-left: 3em;
-            padding-right: 3em;
-        }
-    }
+    //     &__body {
+    //         padding-left: 3em;
+    //         padding-right: 3em;
+    //     }
+    // }
 }

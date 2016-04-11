@@ -1,65 +1,180 @@
-{% extends 'layouts/layout.html' %}
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Optimize your frontend workflow</title>
 
-{% block title %}Optimize your frontend workflow{% endblock %}
+    <link rel="stylesheet" href="/assets/bower_components/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
 
-{% block content %}
-{% include "partials/hero.html" %}
+    <script src="https://use.typekit.net/ybb7ntu.js"></script>
+    <script>try{Typekit.load({ async: false });}catch(e){}</script>
+</head>
 
-<section class="section quotes">
-    <div class="container">
-        <div class="section__header">
-            <h2>Who's optimizing with frontend tools?</h2>
+<body>
+
+    <div class="main" role="main">
+
+        <div class="hero">
+            <div class="container">
+                <h1>Optimize Your Frontend Workflow</h1>
+                <img src="http://placehold.it/1140x500" alt="Snails">
+                <p class="subheading">For large-scale web projects</p>
+            </div>
         </div>
-        <div class="section__body masonry-grid">
-            {% for quote in quotes %}
-            {% include "partials/quote.html" %}
-            {% endfor %}
-        </div>
+
+        <section class="section quotes">
+            <div class="container">
+                <div class="section__header">
+                    <h2>Who's optimizing with frontend tools?</h2>
+                </div>
+                <div class="section__body">
+
+
+                    <div class="quote">
+                        <div class="quote__body">
+                            <a href="" class="quote__profile-image">
+                                <img src="http://placehold.it/150" alt="profile image">
+                            </a>
+                            <div class="quote__text">
+                                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nulla eveniet ipsa incidunt, cupiditate numquam minima ullam, labore quod.&rdquo;</p>
+                            </div>
+                            <div class="quote__name">&mdash;John Doe</div>
+                            <div class="quote__title">Developer</div>
+                        </div>
+                    </div>
+
+
+                    <div class="quote">
+                        <div class="quote__body">
+                            <a href="" class="quote__profile-image">
+                                <img src="http://placehold.it/150" alt="profile image">
+                            </a>
+                            <div class="quote__text">
+                                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nulla eveniet ipsa incidunt, cupiditate numquam minima ullam, labore quod.&rdquo;</p>
+                            </div>
+                            <div class="quote__name">&mdash;John Doe</div>
+                            <div class="quote__title">Developer</div>
+                        </div>
+                    </div>
+
+
+                    <div class="quote">
+                        <div class="quote__body">
+                            <a href="" class="quote__profile-image">
+                                <img src="http://placehold.it/150" alt="profile image">
+                            </a>
+                            <div class="quote__text">
+                                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nulla eveniet ipsa incidunt, cupiditate numquam minima ullam, labore quod.&rdquo;</p>
+                            </div>
+                            <div class="quote__name">&mdash;John Doe</div>
+                            <div class="quote__title">Developer</div>
+                        </div>
+                    </div>
+
+
+                    <div class="quote">
+                        <div class="quote__body">
+                            <a href="" class="quote__profile-image">
+                                <img src="http://placehold.it/150" alt="profile image">
+                            </a>
+                            <div class="quote__text">
+                                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nulla eveniet ipsa incidunt, cupiditate numquam minima ullam, labore quod.&rdquo;</p>
+                            </div>
+                            <div class="quote__name">&mdash;John Doe</div>
+                            <div class="quote__title">Developer</div>
+                        </div>
+                    </div>
+
+
+                    <div class="quote">
+                        <div class="quote__body">
+                            <a href="" class="quote__profile-image">
+                                <img src="http://placehold.it/150" alt="profile image">
+                            </a>
+                            <div class="quote__text">
+                                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nulla eveniet ipsa incidunt, cupiditate numquam minima ullam, labore quod.&rdquo;</p>
+                            </div>
+                            <div class="quote__name">&mdash;John Doe</div>
+                            <div class="quote__title">Developer</div>
+                        </div>
+                    </div>
+
+
+                    <div class="quote">
+                        <div class="quote__body">
+                            <a href="" class="quote__profile-image">
+                                <img src="http://placehold.it/150" alt="profile image">
+                            </a>
+                            <div class="quote__text">
+                                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nulla eveniet ipsa incidunt, cupiditate numquam minima ullam, labore quod.&rdquo;</p>
+                            </div>
+                            <div class="quote__name">&mdash;John Doe</div>
+                            <div class="quote__title">Developer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section resources">
+            <div class="container">
+                <div class="section__header">
+                    <h2>Resources</h2>
+                </div>
+                <div class="section__body">
+                    <ul class="resource-list resource-list--links">
+                        <li class="resource-list__item resource-list__item--label"><i class="fa fa-link"></i> Links</li>
+                        <li class="resource-list__item"><a href="http://deploybot.com/guides/building-assets-with-grunt-or-gulp-during-deployment">Building assets with Grunt or Gulp during deployment <small>by Viget</small></a></li>
+                        <li class="resource-list__item"><a href="https://www.viget.com/articles/gulp-browserify-starter-faq">Gulp + Browserify: The Everything Post <small>by Deploybot</small></a></li>
+                        <li class="resource-list__item"><a href="http://colynb.com/">Getting Started with Gulp <small>by Colyn Brown</small></a></li>
+                        <li class="resource-list__item"><a href="http://zellwk.com/blog/nunjucks-with-gulp/">How to Modularize HTML Using Template Engines and Gulp <small>by Zell Liew</small></a></li>
+                        <li class="resource-list__item"><a href="http://automateyourworkflow.com/">Automating Your Workflow <small>by Zell Liew</small></a></li>
+                        <li class="resource-list__item"><a href="http://blog.namangoel.com/browserify-vs-webpack-js-drama">Browserify VS Webpack - JS Drama <small>by Naman Goel</small></a></li>
+                        <li class="resource-list__item"><a href="http://analyticl.com/blog/get-a-head-start-on-craft-templates-with-twig-js">Get a head start on your Craft CMS templates with Gulp and Twig.js <small>by Jon Thomas</small></a></li>
+                        <li class="resource-list__item"><a href="https://www.smashingmagazine.com/2016/02/efficient-responsive-design-process/">Efficient Responsive Design Process <small>by Ben Callahan</small></a></li>
+                        <li class="resource-list__item"><a href="http://blog.tighten.co/unpacking-webpack">Unpacking Webpack <small>by Samantha Geitz</small></a></li>
+                    </ul>
+                    <ul class="resource-list resource-list--podcasts">
+                        <li class="resource-list__item resource-list__item--label"><i class="fa fa-music"></i> Podcasts</li>
+                        <li class="resource-list__item"><a href="http://shoptalkshow.com/episodes/164-with-ben-callahan/">Shop Talk Show: Episode 164 <small>with Ben Callahan</small></a></li>
+                        <li class="resource-list__item"><a href="http://ctrlclickcast.com/episodes/build-automation-using-gulp">Build automation using gulp <small>with Dan Tello</small></a></li>
+                        <li class="resource-list__item"><a href="http://frontendhappyhour.com/">Frontend Happy Hour <small>with engineers from Netflix, Evernote, and LinkedIn</small></a></li>
+                        <li class="resource-list__item"><a href="http://bdconf.com/podcast/talking-frontend-tooling-with-sparkboxs-neil-renicker-adam-simpson/">Talking "Frontend Tooling" <small>with Sparkbox's Neil Renicker & Adam Simpson</small></a></li>
+                    </ul>
+                    <ul class="resource-list resource-list--people">
+                        <li class="resource-list__item resource-list__item--label"><i class="fa fa-group"></i> People</li>
+                        <li class="resource-list__item"><a href="">@someoneone</a></li>
+                        <li class="resource-list__item"><a href="">@someoneone</a></li>
+                        <li class="resource-list__item"><a href="">@someoneone</a></li>
+                        <li class="resource-list__item"><a href="">@someoneone</a></li>
+                        <li class="resource-list__item"><a href="">@someoneone</a></li>
+                        <li class="resource-list__item"><a href="">@someoneone</a></li>
+                        <li class="resource-list__item"><a href="">@someoneone</a></li>
+                        <li class="resource-list__item"><a href="">@someoneone</a></li>
+                        <li class="resource-list__item"><a href="">@someoneone</a></li>
+                        <li class="resource-list__item"><a href="">@someoneone</a></li>
+                        <li class="resource-list__item"><a href="">@someoneone</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section book">
+            <div class="container">
+                <a href="https://gum.co/JbqgD" class="book-coupon">
+                    <div class="book-coupon__image"><img src="http://placehold.it/100x140" alt="Automating your workflow"></div>
+                    <div class="book-coupon__text">Get 20% off <small><span>Automating Your Workflow</span> with coupon code <strong>peers</strong></small></div>
+                </a>
+            </div>
+            <p class="more-info"><small>Learn more at <a href="http://automateyourworkflow.com/">automateyourworkflow.com</a></small></p>
+        </section>
+
+
     </div>
-</section>
 
-<section class="section resources">
-    <div class="container">
-        <div class="section__header">
-            <h2>Resources</h2>
-        </div>
-        <div class="section__body">
-            <ul class="resource-list resource-list--links">
-                <li class="resource-list__item resource-list__item--label"><i class="fa fa-link"></i> Links</li>
-                <li class="resource-list__item"><a href="http://deploybot.com/guides/building-assets-with-grunt-or-gulp-during-deployment">Building assets with Grunt or Gulp during deployment <small>by Viget</small></a></li>
-                <li class="resource-list__item"><a href="https://www.viget.com/articles/gulp-browserify-starter-faq">Gulp + Browserify: The Everything Post <small>by Deploybot</small></a></li>
-                <li class="resource-list__item"><a href="http://colynb.com/">Getting Started with Gulp <small>by Colyn Brown</small></a></li>
-                <li class="resource-list__item"><a href="http://zellwk.com/blog/nunjucks-with-gulp/">How to Modularize HTML Using Template Engines and Gulp <small>by Zell Liew</small></a></li>
-                <li class="resource-list__item"><a href="http://automateyourworkflow.com/">Automating Your Workflow <small>by Zell Liew</small></a></li>
-                <li class="resource-list__item"><a href="http://blog.namangoel.com/browserify-vs-webpack-js-drama">Browserify VS Webpack - JS Drama <small>by Naman Goel</small></a></li>
-                <li class="resource-list__item"><a href="http://analyticl.com/blog/get-a-head-start-on-craft-templates-with-twig-js">Get a head start on your Craft CMS templates with Gulp and Twig.js <small>by Jon Thomas</small></a></li>
-                <li class="resource-list__item"><a href="https://www.smashingmagazine.com/2016/02/efficient-responsive-design-process/">Efficient Responsive Design Process <small>by Ben Callahan</small></a></li>
-                <li class="resource-list__item"><a href="http://blog.tighten.co/unpacking-webpack">Unpacking Webpack <small>by Samantha Geitz</small></a></li>
-            </ul>
-            <ul class="resource-list resource-list--podcasts">
-                <li class="resource-list__item resource-list__item--label"><i class="fa fa-music"></i> Podcasts</li>
-                <li class="resource-list__item"><a href="http://shoptalkshow.com/episodes/164-with-ben-callahan/">Shop Talk Show: Episode 164 <small>with Ben Callahan</small></a></li>
-                <li class="resource-list__item"><a href="http://ctrlclickcast.com/episodes/build-automation-using-gulp">Build automation using gulp <small>with Dan Tello</small></a></li>
-                <li class="resource-list__item"><a href="http://frontendhappyhour.com/">Frontend Happy Hour <small>with engineers from Netflix, Evernote, and LinkedIn</small></a></li>
-                <li class="resource-list__item"><a href="http://bdconf.com/podcast/talking-frontend-tooling-with-sparkboxs-neil-renicker-adam-simpson/">Talking "Frontend Tooling" <small>with Sparkbox's Neil Renicker & Adam Simpson</small></a></li>
-            </ul>
-            <ul class="resource-list resource-list--people">
-                <li class="resource-list__item resource-list__item--label"><i class="fa fa-group"></i> People</li>
-                {% for quote in quotes %}
-                <li class="resource-list__item"><a href="https://twitter.com/{{ quote.twitterHandle }}">{{ quote.twitterHandle }}</a></li>
-                {% endfor %}
-            </ul>
-        </div>
-    </div>
-</section>
+    <script src="/assets/js/main.js"></script>
+</body>
 
-<section class="section book">
-    <div class="container">
-        <a href="https://gum.co/JbqgD" class="book-coupon">
-            <div class="book-coupon__image"><img src="/assets/img/ayw-book-cover.jpg" alt="Automating your workflow"></div>
-            <div class="book-coupon__text">Get 20% off <small><span>Automating Your Workflow</span> with coupon code <strong>peers</strong></small></div>
-        </a>
-    </div>
-    <p class="more-info"><small>Learn more at <a href="http://automateyourworkflow.com/">automateyourworkflow.com</a></small></p>
-</section>
-{% endblock %}
+</html>

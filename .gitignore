@@ -1,6 +1,5 @@
 .sass-cache
-bower_components
 node_modules
-assets/css
-assets/js
-steps.md
+bower_components
+# dist/html/assets/css
+dist/html/assets/js

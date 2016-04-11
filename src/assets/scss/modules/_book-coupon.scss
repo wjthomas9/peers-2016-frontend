@@ -1,49 +1,49 @@
 .book-coupon {
     display: block;
-    background: lightyellow;
     padding: 1em;
-    font-size: 3em;
     line-height: 1.4;
-    border: 3px dashed $darkBlue;
     text-decoration: none;
     max-width: 480px;
     margin: 0 auto;
-    color: $lightBlue;
+    // font-size: 3em;
+    // background: lightyellow;
+    // border: 3px dashed $darkBlue;
+    // color: $lightBlue;
 
-    &__image img {
-        max-width: 130px;
-    }
+    // &__image img {
+    //     max-width: 130px;
+    // }
 
-    &__text {
-        padding: 0.2em;
+    // &__text {
+    //     padding: 0.2em;
 
-        small {
-            display: block;
-            margin-top: 0.2em;
-            font-size: 0.5em;
-            line-height: 1.5;
-        }
+    //     small {
+    //         display: block;
+    //         margin-top: 0.2em;
+    //         font-size: 0.5em;
+    //         line-height: 1.5;
+    //     }
 
-        span {
-            display: block;
-        }
-    }
+    //     span {
+    //         display: block;
+    //     }
+    // }
 
-    @media (min-width: 42em) {
-        display: flex;
-        align-items: center;
-        font-size: 2em;
+    // @media (min-width: 42em) {
+    //     display: flex;
+    //     align-items: center;
+    //     font-size: 2em;
 
-        &__image {
+    //     &__image {
 
-            img {
-                display: block;
-            }
-        }
+    //         img {
+    //             display: block;
+    //         }
+    //     }
 
-        &__text {
-            padding: 0 1em;
-            flex: 2 auto;
-        }
-    }
+    //     &__text {
+    //         padding: 0 1em;
+    //         flex: 2 auto;
+    //     }
+    // }
 }
