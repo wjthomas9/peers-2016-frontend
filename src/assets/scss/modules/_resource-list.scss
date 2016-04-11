@@ -2,21 +2,28 @@
     line-height: 1.4;
     list-style: none;
     color: white;
-    margin: 0 0 2em;
-    padding: 1.5em 1em;;
-    background: rgba(white, 0.1);
+    margin-bottom: 2em;
+    padding: 0 1.5em;
+    text-align: left;
+    border-right: 1px solid lighten($darkBlue, 10%);
+
+    &:last-child {
+        border: none;
+    }
 
     &__item {
-        margin-bottom: 0.5em;
+        margin-bottom: 1.2em;
+        padding-right: 1em;
 
         &--label {
             line-height: 1;
+            padding-right: 0;
             margin-bottom: 1.8em;
-            text-transform: uppercase;
+            font-weight: bold;
 
             .fa {
                 vertical-align: middle;
-                font-size: 2em;
+                font-size: 1em;
                 margin-right: 0.2em;
             }
         }
@@ -24,10 +31,23 @@
         a {
             color: white;
             text-decoration: none;
+            color: lighten($lightBlue, 55%);
+
+            small {
+                color: lighten($lightBlue, 20%);
+            }
 
             &:hover {
                 color: lighten($lightBlue, 35%);
             }
+        }
+
+    }
+
+    &--people {
+        li:not(.resource-list__item--label) {
+            margin-bottom: 0.5em;
+            font-size: 0.85em;
         }
     }
 }

@@ -66,6 +66,16 @@ body {
     }
 
     .resource-list {
-        flex: 0 1 32%;
+        &--links {
+            flex: 2 0 50%;
+        }
+
+        &--podcasts {
+            flex: 1 0 30%;
+        }
+
+        &--people {
+            flex: 1 0 20%;
+        }
     }
 }

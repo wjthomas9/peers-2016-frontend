@@ -1,7 +1,7 @@
 [
   {
-    "quoteText": "I work primarily on our in-house CSS frameworks and HTML/CSS prototypes. My build process helps me get new projects up and running quickly, automate a lot of tasks like minification, image optimization, and compiling Stylus files and Handlebars templates.",
     "name": "Mike Aparicio",
+    "quoteText": "I work primarily on our in-house CSS frameworks and HTML/CSS prototypes. My build process helps me get new projects up and running quickly, automate a lot of tasks like minification, image optimization, and compiling Stylus files and Handlebars templates.",
     "title": "User Interface Engineer",
     "company": "Groupon",
     "website": "http://groupon.com",
@@ -12,8 +12,8 @@
     "projectTypes": "e-commerce, web apps, native apps, large marketing sites"
   },
   {
-    "quoteText": "It makes things very easy to expand your system to other projects, especially if you build it to be modular in the first place",
     "name": "Sean O'Grady",
+    "quoteText": "It makes things very easy to expand your system to other projects, especially if you build it to be modular in the first place",
     "title": "Head of Design",
     "company": "Lovin Dublin",
     "website": "http://lovindublin.com",
@@ -24,8 +24,8 @@
     "projectTypes": "Large marketing or informational websites"
   },
   {
-    "quoteText": "Having a solid and unique build process gives us a consistent framework that everyone can get familiar with, but still allows plenty of expression and variability. It's all about know what to systemize and what to customize.",
     "name": "Travis Gertz",
+    "quoteText": "Having a solid and unique build process gives us a consistent framework that everyone can get familiar with, but still allows plenty of expression and variability. It's all about know what to systemize and what to customize.",
     "title": "Parter/Designer",
     "company": "Louder Than Ten",
     "website": "https://louderthanten.com",
@@ -36,8 +36,8 @@
     "projectTypes": "Several of the above: Small-Large marketing sites and Web applications"
   },
   {
-    "quoteText": "Makes building smoother, easier, and more manageable ",
     "name": "Jules Webb",
+    "quoteText": "Makes building smoother, easier, and more manageable ",
     "title": "Web Developer",
     "company": "Jules Webb",
     "website": "http://juleswebb.com",
@@ -48,8 +48,8 @@
     "projectTypes": "Small marketing or informational websites"
   },
   {
-    "quoteText": "",
     "name": "Damien",
+    "quoteText": "",
     "title": "Web Developer / Proprietor",
     "company": "Propeller Graphic Design & Marketing",
     "website": "http://www.propellerglobal.com",
@@ -60,8 +60,8 @@
     "projectTypes": "Small marketing or informational websites"
   },
   {
-    "quoteText": "Using a build process provides 1). quality control by catching errors and enforcing code standards, 2). provides consistency and efficiency by formatting the output in a way that is best for browsers while allowing you to write code in a way that is best for humans, and 3). allows for better organization of files.",
     "name": "TJ Draper",
+    "quoteText": "Using a build process provides 1). quality control by catching errors and enforcing code standards, 2). provides consistency and efficiency by formatting the output in a way that is best for browsers while allowing you to write code in a way that is best for humans, and 3). allows for better organization of files.",
     "title": "Web Developer",
     "company": "BuzzingPixel, LLC",
     "website": "https://buzzingpixel.com",
@@ -72,8 +72,8 @@
     "projectTypes": "Large marketing or informational websites"
   },
   {
-    "quoteText": "Without a build process we'd still be writing vanilla css.",
     "name": "Dan Trewartha",
+    "quoteText": "Without a build process we'd still be writing vanilla css.",
     "title": "Web Developer",
     "company": "LRS Web Solutions",
     "website": "http://dantrewartha.com",
@@ -84,8 +84,8 @@
     "projectTypes": "Large marketing or informational websites"
   },
   {
-    "quoteText": "On a day to day basis the biggest value it brings, by far, is modularity. This helps make my projects more organized, scalable and maintainable.",
     "name": "Brett Burwell",
+    "quoteText": "On a day to day basis the biggest value it brings, by far, is modularity. This helps make my projects more organized, scalable and maintainable.",
     "title": "Front-End Developer",
     "company": "Static Interactive",
     "website": "http://thisisstatic.com",
@@ -96,8 +96,8 @@
     "projectTypes": "Large marketing or informational websites"
   },
   {
-    "quoteText": "Build processes allow a team to effectively collaborate on software. A major benefit is that build processes get checked into version control like any other code where it can grow and evolve with the project.",
     "name": "Adam Simpson",
+    "quoteText": "Build processes allow a team to effectively collaborate on software. A major benefit is that build processes get checked into version control like any other code where it can grow and evolve with the project.",
     "title": "Web Developer",
     "company": "Sparkbox",
     "website": "https://adamsimpson.net",
@@ -108,8 +108,8 @@
     "projectTypes": "Web applications / SaaS"
   },
   {
-    "quoteText": "I work faster, write better organized and better optimized code, have access to powerful tools and new language features, and I can see live updates across multiple devices and browsers.",
     "name": "Dan Tello",
+    "quoteText": "I work faster, write better organized and better optimized code, have access to powerful tools and new language features, and I can see live updates across multiple devices and browsers.",
     "title": "Senior Front End Developer",
     "company": "Viget",
     "website": "http://viget.com",
@@ -120,8 +120,8 @@
     "projectTypes": "Most of the above. Any type of thing that's on the web."
   },
   {
-    "quoteText": "By using Gulp tasks and node scripts we're able to develop, build and deploy a hybrid iOS application built on the Ionic Framework directly to HockeyApp for distribution, as well as introduce a separate deployment path to a web-based version of the same application using Microsoft Build Tools and TFS build definitions.  ",
     "name": "Eddie Ebeling",
+    "quoteText": "By using Gulp tasks and node scripts we're able to develop, build and deploy a hybrid iOS application built on the Ionic Framework directly to HockeyApp for distribution, as well as introduce a separate deployment path to a web-based version of the same application using Microsoft Build Tools and TFS build definitions.  ",
     "title": "Senior UI/UX Developer",
     "company": "H. D. Smith",
     "website": "http://eddieebeling.github.io/",
@@ -132,8 +132,8 @@
     "projectTypes": "Software applications"
   },
   {
-    "quoteText": "Semantic HTML isn’t enough anymore. Between minifying resources, inlining the critical CSS, and everything else the Google people demand, an automated build process is an absolute must these days for front-end dev.",
     "name": "Brandon Kelly",
+    "quoteText": "Semantic HTML isn’t enough anymore. Between minifying resources, inlining the critical CSS, and everything else the Google people demand, an automated build process is an absolute must these days for front-end dev.",
     "title": "CEO",
     "company": "Pixel & Tonic",
     "website": "https://craftcms.com",
@@ -144,8 +144,8 @@
     "projectTypes": "Software applications"
   },
   {
-    "quoteText": "You can’t go live with templates. Our build process means we deliver an easily integrate-able design system that creates consistency and can be maintained and extended.",
     "name": "Ben Callahan",
+    "quoteText": "You can’t go live with templates. Our build process means we deliver an easily integrate-able design system that creates consistency and can be maintained and extended.",
     "title": "President",
     "company": "Sparkbox",
     "website": "http://seesparkbox.com, bencallahan.com",
@@ -156,8 +156,8 @@
     "projectTypes": "We build medium to very large marketing/e-comm sites and web applications."
   },
   {
-    "quoteText": "Build tools like Grunt help our team write code that is more consistent across the team, better tested, and better optimized for production. We can focus on unique aspects of each project instead of mundane problems that have already been solved.",
     "name": "Stephen Bowling",
+    "quoteText": "Build tools like Grunt help our team write code that is more consistent across the team, better tested, and better optimized for production. We can focus on unique aspects of each project instead of mundane problems that have already been solved.",
     "title": "VP Interactive",
     "company": "Rockit Science Agency",
     "website": "http://rockitscienceagency.com",
@@ -168,8 +168,8 @@
     "projectTypes": "Large marketing or informational websites"
   },
   {
-    "quoteText": "The upfront investment in time can save you from a massive amount of repetitive work later on in the development process.",
     "name": "Dan Quinn",
+    "quoteText": "The upfront investment in time can save you from a massive amount of repetitive work later on in the development process.",
     "title": "Front End Developer",
     "company": "Luminus Networks",
     "website": "http://danielpquinn.github.io",
@@ -180,8 +180,8 @@
     "projectTypes": "Software applications"
   },
   {
-    "quoteText": "A well thought out build process provides much needed consistency and sanity across team members involved with your web projects. As your team grows (and/or maintenance & feature development become important) your build process will literally save your ass.",
     "name": "Paulo Elias",
+    "quoteText": "A well thought out build process provides much needed consistency and sanity across team members involved with your web projects. As your team grows (and/or maintenance & feature development become important) your build process will literally save your ass.",
     "title": "Lead Web Developer",
     "company": "IDEO",
     "website": "http://pauloelias.com",
@@ -192,8 +192,8 @@
     "projectTypes": "Web and Mobile"
   },
   {
-    "quoteText": "Automating my frontend build process means I can spend more time on the things that will add value to the businesses of my clients.",
     "name": "Jon Thomas",
+    "quoteText": "Automating my frontend build process means I can spend more time on the things that will add value to the businesses of my clients.",
     "title": "President",
     "company": "Analyticl",
     "website": "http://www.analyticl.com",
