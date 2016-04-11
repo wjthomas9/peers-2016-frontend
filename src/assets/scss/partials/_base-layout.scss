@@ -51,10 +51,10 @@ body {
     }
 }
 
-
+// Quote and resources flexbox layout
 @media (min-width: 42em) {
-    .quotes, .section__body,
-    .resources, .section__body {
+    .quotes .section__body,
+    .resources .section__body {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
