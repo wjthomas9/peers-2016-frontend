@@ -2,7 +2,6 @@ var gulp            = require('gulp');
 var gulpif          = require('gulp-if');
 var yargs           = require('yargs');
 var autoprefixer    = require('gulp-autoprefixer');
-var babel           = require('gulp-babel');
 var include         = require('gulp-include');
 var uglify          = require('gulp-uglify');
 var sass            = require('gulp-sass');
