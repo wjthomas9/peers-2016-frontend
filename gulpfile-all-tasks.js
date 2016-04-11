@@ -28,7 +28,7 @@ var browserSync     = require('browser-sync').create();
 const PRODUCTION = !!(yargs.argv.production);
 
 
-// Set bower paths
+// Set sass include paths
 var sassIncludePaths = [
     'src/assets/scss/partials',
     'src/assets/scss/modules'
