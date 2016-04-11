@@ -3,8 +3,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: $sans;
-    // background: $lightBlue;
-    // background: linear-gradient(to bottom, lighten($lightBlue, 5%), $darkBlue 70%);
+    background: $lightBlue;
+    background: linear-gradient(to bottom, lighten($lightBlue, 5%), $darkBlue 70%);
 }
 
 *, *:before, *:after {
@@ -29,32 +29,32 @@ body {
     }
 }
 
-// .quotes {
-//     background: rgba($darkBlue, 0.2);
-//     padding-bottom: 0;
+.quotes {
+    background: rgba($darkBlue, 0.2);
+    padding-bottom: 0;
 
-//     .section__header {
-//         margin-bottom: 8em;
-//     }
-// }
+    .section__header {
+        margin-bottom: 8em;
+    }
+}
 
-// .resources {
-//     background: lighten($darkBlue, 4%);
-// }
+.resources {
+    background: lighten($darkBlue, 4%);
+}
 
-// .book {
-//     text-align: center;
-//     background: lighten($darkBlue, 1%);
+.book {
+    text-align: center;
+    background: lighten($darkBlue, 1%);
 
-//     .more-info {
-//         color: white;
-//         font-weight: 200;
+    .more-info {
+        color: white;
+        font-weight: 200;
 
-//         a {
-//             color: white;
-//         }
-//     }
-// }
+        a {
+            color: white;
+        }
+    }
+}
 
 // Quote and resources flexbox layout
 @media (min-width: 42em) {
