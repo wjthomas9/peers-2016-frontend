@@ -38,6 +38,19 @@ body {
     background: $darkBlue;
 }
 
+.book {
+    text-align: center;
+
+    .more-info {
+        color: white;
+        font-weight: 200;
+
+        a {
+            color: white;
+        }
+    }
+}
+
 
 @media (min-width: 42em) {
     .quotes, .section__body,
