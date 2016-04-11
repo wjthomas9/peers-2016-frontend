@@ -18,16 +18,17 @@ body {
     padding: 3em 0;
 
     &__header {
+        margin-bottom: 3em;
+
         h2 {
             margin-bottom: 0;
         }
-
-        margin-bottom: 3em;
     }
 }
 
 .quotes {
     background: rgba($darkBlue, 0.2);
+    padding-bottom: 0;
 
     .section__header {
         margin-bottom: 8em;
