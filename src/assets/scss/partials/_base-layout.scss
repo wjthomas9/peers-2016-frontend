@@ -36,11 +36,12 @@ body {
 }
 
 .resources {
-    background: $darkBlue;
+    background: lighten($darkBlue, 4%);
 }
 
 .book {
     text-align: center;
+    background: lighten($darkBlue, 1%);
 
     .more-info {
         color: white;
