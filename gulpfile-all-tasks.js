@@ -14,7 +14,6 @@ var data            = require('gulp-data');
 var prettify        = require('gulp-prettify');
 var rev             = require('gulp-rev');
 var revReplace      = require('gulp-rev-replace');
-var rename          = require('gulp-rename');
 var rimraf          = require('rimraf');
 var fs              = require('fs');
 var path            = require('path');
@@ -220,6 +219,6 @@ gulp.task('prettify-templates', function() {
 gulp.task('watch', function() {
     gulp.watch(src.sass, ['sass']);
     gulp.watch(src.scripts, ['scripts']);
-    gulp.watch([src.data], ['templates']);
+    gulp.watch(src.data, ['templates']);
     gulp.watch(src.templatesAndPartials, ['templates']);
 });
