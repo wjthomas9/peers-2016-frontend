@@ -9,6 +9,10 @@ var watch = require('gulp-watch');
 var browserSync = require('browser-sync').create();
 var runSequence = require('run-sequence');
 var rimraf = require('rimraf');
+var twig = require('gulp-twig');
+var imagemin = require('gulp-imagemin');
+var data = require('gulp-data');
+var fs = require('fs');
 
 const PRODUCTION = !!(yargs.argv.production);
 
@@ -45,8 +49,12 @@ var dist = {
 // Task runners
 // ---------------------------------------------------------------------
 
+gulp.task('clean', function(cb) {
+    runSequence(['clean-assets', 'clean-templates'], cb);
+});
+
 gulp.task('build', function(cb) {
-    runSequence('clean-assets', ['copy-assets', 'sass'], cb);
+    runSequence('clean', ['copy-assets', 'sass', 'templates', 'images'], cb);
 });
 
 gulp.task('default', function(cb) {
@@ -61,6 +69,11 @@ gulp.task('default', function(cb) {
 gulp.task('clean-assets', function(done){
     rimraf(dist.assetsDir + '/**/*', done);
 });
+
+gulp.task('clean-templates', function(done){
+    rimraf(dist.templates, done);
+});
+
 
 
 // Copy assets to distribution folder
@@ -87,6 +100,36 @@ gulp.task('sass', function() {
 });
 
 
+//Create JSON data to pass to twig
+function getData(file) {
+    var data = {};
+    data.quotes = JSON.parse(fs.readFileSync(file));
+    return data;
+}
+
+
+// Templates
+gulp.task('templates', function() {
+    return gulp.src(src.templates)
+        .pipe(data(getData('./src/data/surveyQuotes.json')))
+        .pipe(twig())
+        .pipe(gulp.dest(dist.htmlDir))
+        .pipe(browserSync.stream());
+});
+
+
+
+//Optimize Images
+gulp.task('images', function() {
+    return gulp.src(src.images)
+      .pipe(gulpif(PRODUCTION, imagemin({
+        progressive: true
+      })))
+      .pipe(gulp.dest(dist.imagesDir));
+});
+
+
+
 // Browsersync server
 gulp.task('serve', function() {
     browserSync.init({
@@ -99,4 +142,6 @@ gulp.task('serve', function() {
 
 gulp.task('watch', function() {
     gulp.watch(dist.sass, ['sass']);
+    gulp.watch([src.data], ['templates']);
+    gulp.watch(src.templatesAndPartials, ['templates']);
 });
