@@ -61,13 +61,13 @@ var dist = {
 
 // Task runners
 gulp.task('clean', function(cb) {
-    runSequence(['cleanAssets', 'cleanTemplates'], cb);
+    runSequence(['clean-assets', 'clean-templates'], cb);
 });
 
 gulp.task('build', function(cb) {
     runSequence('clean',
         ['scripts', 'sass', 'images', 'templates'],
-        'copyassets', 'revassets', 'replaceUrls', 'prettify-templates', cb);
+        'copy-assets', 'revassets', 'replace-urls', 'prettify-templates', cb);
 });
 
 gulp.task('default', function(cb) {
@@ -80,17 +80,17 @@ gulp.task('default', function(cb) {
 // TASKS
 // ---------------------------------------------------------------------
 
-gulp.task('cleanAssets', function(done){
+gulp.task('clean-assets', function(done){
     rimraf(dist.assetsDir + '/**/*', done);
 });
 
-gulp.task('cleanTemplates', function(done){
+gulp.task('clean-templates', function(done){
     rimraf(dist.templates, done);
 });
 
 
 
-gulp.task('copyassets', function(){
+gulp.task('copy-assets', function(){
     return gulp.src(['src/assets/**/*', '!src/assets/{img,js,scss}/**/*', '!src/assets/scss'])
       .pipe(gulp.dest(dist.assetsDir));
 });
@@ -190,7 +190,7 @@ gulp.task('revassets', function() {
 
 var revmanifest = gulp.src('./' + dist.assetsDir + '/rev-manifest.json');
 
-gulp.task('replaceUrls', function() {
+gulp.task('replace-urls', function() {
     return gulp.src(dist.htmlDir + '/*.html')
         .pipe(gulpif(PRODUCTION, revReplace({
             manifest: revmanifest

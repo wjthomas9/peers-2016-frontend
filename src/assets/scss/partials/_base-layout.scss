@@ -5,6 +5,7 @@ body {
     font-family: $sans;
     background: $lightBlue;
     background: linear-gradient(to bottom, lighten($lightBlue, 5%), $darkBlue 70%);
+    color: white;
 }
 
 *, *:before, *:after {

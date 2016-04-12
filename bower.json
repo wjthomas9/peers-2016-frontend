@@ -1,0 +1,20 @@
+{
+  "name": "peers-workshop",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Jon Thomas <jon@analyticl.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/wjthomas9/peers-2016-frontend",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.6.0"
+  }
+}
