@@ -1,5 +1,4 @@
 .sass-cache
 node_modules
 bower_components
-# dist/html/assets/css
-dist/html/assets/js
+dist/html/
