@@ -14,7 +14,6 @@ var data            = require('gulp-data');
 var prettify        = require('gulp-prettify');
 var rev             = require('gulp-rev');
 var revReplace      = require('gulp-rev-replace');
-var csv2json        = require('gulp-csv2json');
 var rename          = require('gulp-rename');
 var rimraf          = require('rimraf');
 var fs              = require('fs');
