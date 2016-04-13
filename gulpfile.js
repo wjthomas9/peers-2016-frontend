@@ -9,7 +9,6 @@ var cssnano         = require('gulp-cssnano');
 var sourcemaps      = require('gulp-sourcemaps');
 var imagemin        = require('gulp-imagemin');
 var watch           = require('gulp-watch');
-var plumber         = require('gulp-plumber');
 var twig            = require('gulp-twig');
 var data            = require('gulp-data');
 var prettify        = require('gulp-prettify');
