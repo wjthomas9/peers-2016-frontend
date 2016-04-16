@@ -1,13 +1,13 @@
 .book-coupon {
     display: block;
-    background: lightyellow;
     padding: 1em;
-    font-size: 3em;
     line-height: 1.4;
-    border: 3px dashed $darkBlue;
     text-decoration: none;
     max-width: 480px;
     margin: 0 auto;
+    font-size: 3em;
+    background: lightyellow;
+    border: 3px dashed $darkBlue;
     color: $lightBlue;
 
     &__image img {

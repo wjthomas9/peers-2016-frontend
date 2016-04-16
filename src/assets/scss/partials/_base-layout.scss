@@ -1,7 +1,11 @@
 body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: $sans;
     background: $lightBlue;
     background: linear-gradient(to bottom, lighten($lightBlue, 5%), $darkBlue 70%);
-    text-align: center;
+    color: white;
 }
 
 *, *:before, *:after {

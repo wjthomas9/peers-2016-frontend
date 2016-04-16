@@ -1,65 +1,24 @@
-{% extends 'layouts/layout.html' %}
-
-{% block title %}Optimize your frontend workflow{% endblock %}
+{% extends "layouts/default.html" %}
 
 {% block content %}
-{% include "partials/hero.html" %}
+    {% include "partials/hero.html" %}
 
-<section class="section quotes">
-    <div class="container">
-        <div class="section__header">
-            <h2>Who's optimizing with frontend tools?</h2>
-        </div>
-        <div class="section__body masonry-grid">
-            {% for quote in quotes %}
-            {% include "partials/quote.html" %}
-            {% endfor %}
-        </div>
-    </div>
-</section>
-
-<section class="section resources">
-    <div class="container">
-        <div class="section__header">
-            <h2>Resources</h2>
-        </div>
-        <div class="section__body">
-            <ul class="resource-list resource-list--links">
-                <li class="resource-list__item resource-list__item--label"><i class="fa fa-link"></i> Links</li>
-                <li class="resource-list__item"><a href="http://deploybot.com/guides/building-assets-with-grunt-or-gulp-during-deployment">Building assets with Grunt or Gulp during deployment <small>by Viget</small></a></li>
-                <li class="resource-list__item"><a href="https://www.viget.com/articles/gulp-browserify-starter-faq">Gulp + Browserify: The Everything Post <small>by Deploybot</small></a></li>
-                <li class="resource-list__item"><a href="http://colynb.com/">Getting Started with Gulp <small>by Colyn Brown</small></a></li>
-                <li class="resource-list__item"><a href="http://zellwk.com/blog/nunjucks-with-gulp/">How to Modularize HTML Using Template Engines and Gulp <small>by Zell Liew</small></a></li>
-                <li class="resource-list__item"><a href="http://automateyourworkflow.com/">Automating Your Workflow <small>by Zell Liew</small></a></li>
-                <li class="resource-list__item"><a href="http://blog.namangoel.com/browserify-vs-webpack-js-drama">Browserify VS Webpack - JS Drama <small>by Naman Goel</small></a></li>
-                <li class="resource-list__item"><a href="http://analyticl.com/blog/get-a-head-start-on-craft-templates-with-twig-js">Get a head start on your Craft CMS templates with Gulp and Twig.js <small>by Jon Thomas</small></a></li>
-                <li class="resource-list__item"><a href="https://www.smashingmagazine.com/2016/02/efficient-responsive-design-process/">Efficient Responsive Design Process <small>by Ben Callahan</small></a></li>
-                <li class="resource-list__item"><a href="http://blog.tighten.co/unpacking-webpack">Unpacking Webpack <small>by Samantha Geitz</small></a></li>
-            </ul>
-            <ul class="resource-list resource-list--podcasts">
-                <li class="resource-list__item resource-list__item--label"><i class="fa fa-music"></i> Podcasts</li>
-                <li class="resource-list__item"><a href="http://shoptalkshow.com/episodes/164-with-ben-callahan/">Shop Talk Show: Episode 164 <small>with Ben Callahan</small></a></li>
-                <li class="resource-list__item"><a href="http://ctrlclickcast.com/episodes/build-automation-using-gulp">Build automation using gulp <small>with Dan Tello</small></a></li>
-                <li class="resource-list__item"><a href="http://frontendhappyhour.com/">Frontend Happy Hour <small>with engineers from Netflix, Evernote, and LinkedIn</small></a></li>
-                <li class="resource-list__item"><a href="http://bdconf.com/podcast/talking-frontend-tooling-with-sparkboxs-neil-renicker-adam-simpson/">Talking "Frontend Tooling" <small>with Sparkbox's Neil Renicker & Adam Simpson</small></a></li>
-            </ul>
-            <ul class="resource-list resource-list--people">
-                <li class="resource-list__item resource-list__item--label"><i class="fa fa-group"></i> People</li>
+    <section class="section quotes">
+        <div class="container">
+            <div class="section__header">
+                <h2>Who's optimizing with frontend tools?</h2>
+            </div>
+            <div class="section__body masonry-grid">
                 {% for quote in quotes %}
-                <li class="resource-list__item"><a href="https://twitter.com/{{ quote.twitterHandle }}">{{ quote.twitterHandle }}</a></li>
+                {% include "partials/quote.html" %}
                 {% endfor %}
-            </ul>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="section book">
-    <div class="container">
-        <a href="https://gum.co/JbqgD" class="book-coupon">
-            <div class="book-coupon__image"><img src="/assets/img/ayw-book-cover.jpg" alt="Automating your workflow"></div>
-            <div class="book-coupon__text">Get 20% off <small><span>Automating Your Workflow</span> with coupon code <strong>peers</strong></small></div>
-        </a>
+    {% include "partials/resources.html" %}
+
+    {% include "partials/book-coupon.html" %}
+
     </div>
-    <p class="more-info"><small>Learn more at <a href="http://automateyourworkflow.com/">automateyourworkflow.com</a></small></p>
-</section>
 {% endblock %}

@@ -1,10 +1,10 @@
 .resource-list {
     line-height: 1.4;
     list-style: none;
-    color: white;
     margin-bottom: 2em;
     padding: 0 1.5em;
     text-align: left;
+    color: white;
     border-right: 1px solid lighten($darkBlue, 10%);
 
     &:last-child {
@@ -29,8 +29,8 @@
         }
 
         a {
-            color: white;
             text-decoration: none;
+            color: white;
             color: lighten($lightBlue, 55%);
 
             small {

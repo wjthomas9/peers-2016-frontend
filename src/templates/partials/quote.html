@@ -1,7 +1,6 @@
-{% if quote.quoteText %}
 <div class="quote masonry-grid-item{% if loop.first %} grid-sizer{% endif %}">
     <div class="quote__body">
-        <a href="htts://twitter.com/{{ quote.twitterHandle }}" class="quote__profile-image">
+        <a href="https://twitter.com/{{ quote.twitterHandle }}" class="quote__profile-image">
             <img src="/assets/img/{{ quote.profilePic }}" alt="profile image">
         </a>
         <div class="quote__text">
@@ -11,4 +10,3 @@
         <div class="quote__title">{{ quote.title }}</div>
     </div>
 </div>
-{% endif %}

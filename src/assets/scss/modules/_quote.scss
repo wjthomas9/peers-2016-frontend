@@ -4,6 +4,7 @@
     padding: 0 2em;
     padding: 0.8em;
     text-align: center;
+    color: black;
 
     &__profile-image {
         width: 150px;
@@ -24,8 +25,9 @@
 
     &__body {
         background: white;
-        position: relative;
+        padding: 2em;
         padding: 75px 2em 2em;
+        position: relative;
         border-radius: 10px;
         box-shadow: 8px 8px 0 0 black;
 
