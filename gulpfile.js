@@ -59,7 +59,8 @@ gulp.task('clean', function(cb) {
 });
 
 gulp.task('build', function(cb) {
-    runSequence('clean', ['copy-assets', 'sass', 'templates', 'images', 'scripts'], 'prettify-templates', cb);
+    runSequence('clean', ['scripts', 'sass', 'images', 'templates'],
+        'copy-assets', 'revassets', 'replace-urls', 'prettify-templates', cb);
 });
 
 gulp.task('default', function(cb) {
