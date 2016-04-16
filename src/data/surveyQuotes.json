@@ -48,18 +48,6 @@
     "projectTypes": "Small marketing or informational websites"
   },
   {
-    "name": "Damien",
-    "quoteText": "",
-    "title": "Web Developer / Proprietor",
-    "company": "Propeller Graphic Design & Marketing",
-    "website": "http://www.propellerglobal.com",
-    "twitterHandle": "@damienpbuckley",
-    "profilePic": "damienpbuckley.jpg",
-    "teamSize": "2-5 (We all wear many hats!)",
-    "role": "I primarily handle frontend development, collaborating with designers to help bring their vision to life.",
-    "projectTypes": "Small marketing or informational websites"
-  },
-  {
     "name": "TJ Draper",
     "quoteText": "Using a build process provides 1). quality control by catching errors and enforcing code standards, 2). provides consistency and efficiency by formatting the output in a way that is best for browsers while allowing you to write code in a way that is best for humans, and 3). allows for better organization of files.",
     "title": "Web Developer",
@@ -194,7 +182,7 @@
   {
     "name": "Jon Thomas",
     "quoteText": "Automating my frontend build process means I can spend more time on the things that will add value to the businesses of my clients.",
-    "title": "President",
+    "title": "Owner",
     "company": "Analyticl",
     "website": "http://www.analyticl.com",
     "twitterHandle": "@wjonthomas",
